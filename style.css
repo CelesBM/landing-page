@@ -44,7 +44,7 @@ header {
   text-decoration: none;
   color: #00c5e4;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -54,4 +54,73 @@ header {
 
 body {
   background-color: #18171c;
+}
+
+#hero {
+  display: flex;
+  padding: 120px 80px;
+  gap: 50px;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.hero__info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #00c5e4;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.hero__info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.hero__options {
+  display: flex;
+  padding: 30px 0;
+  gap: 30px;
+}
+
+.hero__options button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border-radius: 1rem;
+  width: 250px;
+  padding: 15px 0px;
+  border: solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero__options button:nth-child(1) {
+  background-color: #af7135;
+}
+
+.hero__img img {
+  height: 300px;
+  width: 550px;
+  border-radius: 1rem;
+  border: solid 0.2rem #141414;
+}
+
+.container__info {
+  padding: 50px 160px;
+}
+
+.container__info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.container__info span {
+  font-weight: bold;
 }
