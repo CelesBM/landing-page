@@ -63,6 +63,13 @@ header {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .navbar__ul a {
+    font-size: 1rem;
+    padding: 0px 60px;
+  }
+}
+
 .navbar__ul a:hover {
   text-shadow: 3px 3px 3px #af7135;
 }
@@ -110,7 +117,7 @@ body {
 
 @media (min-width: 768px) {
   .hero__info h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -219,5 +226,253 @@ body {
 @media (min-width: 768px) {
   .container__info span {
     font-weight: bold;
+  }
+}
+
+/*  CARDS  */
+
+#cards {
+  display: flex;
+  padding: 80px 60px;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  #cards {
+    flex-direction: column;
+  }
+}
+
+.card-image {
+  width: 200px;
+  height: 120px;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-image {
+    width: 350px;
+    height: 220px;
+  }
+}
+
+.container__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  gap: 40px;
+}
+
+.advantages h5 {
+  font-size: 2rem;
+  color: #00c5e4;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .advantages h5 {
+    font-size: 3rem;
+  }
+}
+
+.advantages p {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .advantages p {
+    font-size: 1.5rem;
+  }
+}
+
+.container__card-box {
+  display: flex;
+  flex-direction: column; /*sacar esto para responsive y agregar space arround*/
+  align-items: center;
+  gap: 50px;
+  padding: 70px 0px;
+}
+
+@media (min-width: 768px) {
+  .container__card-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.card-box {
+  background: rgb(29, 29, 29);
+  background: radial-gradient(
+    circle,
+    rgba(29, 29, 29, 1) 0%,
+    rgba(29, 29, 29, 1) 69%,
+    rgba(0, 197, 228, 1) 77%,
+    rgba(116, 93, 72, 1) 80%,
+    rgba(116, 93, 72, 1) 84%,
+    rgba(175, 113, 53, 1) 95%
+  );
+  height: 300px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 1rem;
+  border: solid 0.1rem #af7135;
+}
+
+@media (min-width: 768px) {
+  .card-box {
+    height: 500px;
+  }
+}
+
+.card-box p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  padding: 0px 10px;
+}
+
+@media (min-width: 768px) {
+  .card-box p {
+    font-size: 1.2rem;
+  }
+}
+
+/* CONTACTO */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px;
+  margin-bottom: 100px;
+}
+
+.container__contact {
+  display: flex;
+  flex-direction: column; /*sacar esto en responsive*/
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .container__contact {
+    flex-direction: row;
+
+    gap: 80px;
+  }
+}
+
+.container__contact h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #00c5e4;
+}
+
+@media (min-width: 768px) {
+  .container__contact h5 {
+    font-size: 3rem;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  display: flex;
+  gap: 5px;
+}
+.contact-image {
+  height: 180px;
+  width: 300px;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-image {
+    height: 380px;
+    width: 600px;
+    border-radius: 1rem;
+  }
+}
+
+.option a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .option a {
+    font-size: 1.2rem;
+  }
+}
+
+/* FOOTER */
+
+#footer {
+  background: rgb(29, 29, 29);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 29, 29, 1) 0%,
+    rgba(29, 29, 29, 1) 88%,
+    rgba(0, 197, 228, 1) 89%,
+    rgba(116, 93, 72, 1) 92%,
+    rgba(116, 93, 72, 1) 94%,
+    rgba(175, 113, 53, 1) 97%
+  );
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-top: solid 0.1rem #af7135;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+  }
+}
+
+.footer-image {
+  height: 140px;
+  width: 300px;
+  border-radius: 2rem;
+}
+
+.footer h5 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .footer h5 {
+    font-size: 1.2rem;
+    margin-right: 200px;
   }
 }
